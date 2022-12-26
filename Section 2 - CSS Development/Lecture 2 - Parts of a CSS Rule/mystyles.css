@@ -1,0 +1,170 @@
+
+
+  h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(6, 19, 160);
+  }
+
+  .blueboldtext {
+    font-size: small;
+    color: blue;
+    font-weight: bold;
+  }
+
+  .largegreentext {
+    font-size: large;
+    font-weight: bold;
+    color: green;
+  }
+
+  .myunderline {
+    text-decoration: underline;
+  }
+
+  img {
+    opacity: 0.4;
+  }
+
+  img:hover {
+    opacity: 1.0;
+  }
+
+  a:link {
+    color: #10C212;
+  }
+
+  a:visited {
+    color: red;
+  }
+
+  a:hover {
+    color: purple;
+  }
+
+  table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th td {
+    padding: 15px;
+  }
+
+  tr:hover {
+    background-color: rgb(193, 240, 193);
+  }
+
+  #div1 {
+    width: 100%;
+    height: 500px;
+    border: blue;
+  }
+
+  #div2 {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    display: inline-block;
+  }
+
+  #div3 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    display: inline-block;
+  }
+
+  #div4 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: inline-block;
+  }
+
+  #div5 {
+    height: 10px;
+  }
+
+  #background {
+    background-image: url(txtbg.jpg);
+    padding: 40px;
+  }
+
+  #textbox {
+    width: auto;
+    height: 100px;
+    opacity: 0.8;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .text {
+    color: white;
+
+  }
+
+  .txtcolor {
+
+    color: red;
+
+  }
+
+  .txtcolor2 {
+
+    color: #10C212;
+
+  }
+
+  .txtcolor3 {
+
+    color: rgb(160,50,90);
+    
+  }
+
+  .txtspace {
+
+    letter-spacing: 10px;
+
+  }
+
+  .wordspace {
+
+    word-spacing: 10px;
+
+  }
+
+  .txtalign {
+
+    text-align: left;
+
+  }
+
+  .txtdeco {
+
+    text-decoration: underline;
+
+  }
+
+  .txttrans {
+
+    text-transform: capitalize;
+
+  }
+
+  .textstyle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-style: oblique;
+    line-height: 200%;
+  }
+
+  .myborder {
+    border: 4px;
+    border-color: #333333;
+    border-style: dashed;
+  }
