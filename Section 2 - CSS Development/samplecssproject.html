@@ -4,8 +4,156 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CSS Web Page</title>
+
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                line-height: 1.5em;
+                
+            }
+
+            #header {
+                background: black;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 100px;
+            }
+
+            #contentwrapper {
+                float: left;
+                width: 100%;
+            }
+
+            #contentcolumn {
+                margin: 0 230px 0 230px;
+            }
+
+            #leftcolumn {
+                float: left;
+                width: 230px;
+                margin-left: -100%;
+                background: #24C8FF;
+            }
+
+            #rightcolumn {
+                float: left;
+                width: 230px;
+                margin-left: -230px;
+                background: #FFFB00;
+            }
+
+            .innertext {
+                margin:20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #5e5e5e
+            }
+
+            #footer {
+                clear: left;
+                width: 100%;
+                background: black;
+                color: #FFFFFF;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding: 4px;
+            }
+
+            /* #### Navigation Bar #### */
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: #000;
+            }
+
+            li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #808080;
+            }
+
+            .active {
+                background-color: #0099ff;
+            }
+
+            /* ##### Responsive Layout CSS ##### */
+
+            @media (max-width: 840px) {
+
+                #leftcolumn {
+                    margin-left: -100%;
+                }
+
+                #rightcolumn {
+                    float: none;
+                    width: 100%;
+                    margin-left: 0;
+                    clear: both;
+                }
+
+                #contentcolumn {
+                    margin-right: 0;
+                }
+
+            }
+
+            @media (max-width: 600px) {
+            
+                #leftcolumn {
+                    float: none;
+                    width: 100%;
+                    margin-left: 0;
+                    clear: both;
+                }
+
+                #contentcolumn {
+                    margin-left: 0;
+                }
+            }
+
+        </style>
     </head>
     <body>
-        
+        <div id="container">
+            <div id="header">
+                <ul style="display: inline;">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">About</a></li>
+                    <li><a href="#contact">News</a></li>
+                    <li><a href="#about">Contact</a></li>
+                </ul>
+            </div>
+            <div id="contentwrapper">
+                <div id="contentcolumn">
+                    <div class="innertext"><b>Welcome!</b><br/> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi recusandae praesentium perspiciatis ipsa tempora nobis eius distinctio rerum cumque pariatur aspernatur autem, a harum at ex doloremque! Qui nisi recusandae, mollitia unde sit a! Sapiente perferendis earum eaque voluptate quod repudiandae harum exercitationem asperiores culpa numquam et illo, animi corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. At totam sequi perferendis officiis repellendus illo vel ab rem itaque velit cum, iure quibusdam. Aliquam, neque cum illum expedita necessitatibus dolor? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore dicta, inventore quibusdam debitis soluta culpa atque a obcaecati laboriosam, repellat quisquam velit deserunt quod ea nostrum praesentium veritatis vero saepe distinctio dolorum? Quaerat sapiente amet, quisquam animi ipsa soluta nisi. Atque voluptate fuga ducimus! Corporis ad similique assumenda quasi possimus repellat nobis velit at, deleniti voluptas. Aliquam vitae minima voluptates, odio placeat inventore eum rerum mollitia quisquam architecto porro fugit, quae ducimus iure sapiente doloribus iudicta!</div>
+                </div>
+            </div>
+            <div id="leftcolumn">
+                <div class="innertext">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. o modi quia exercitationem mavoluptates iure autem qui mavoluptates iure autem qui avoluptates iure autem qui mavoluptates iure autem quisit laborum nulla neque error blanditiis a atque repellendus! Quos at voluptas doloremque iure inventore excepturi temporibus debitis beatae asperiores, laborum commodi reiciendis totam!
+                </div>
+            </div>
+            <div id="rightcolumn">
+                <div class="innertext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, earum sint. Ullam, praesentium impedit, iste rerum quisquam sapiente, excepturi ab non quos ipsam consectetur! Eum nemo voluptatem enim maiores non, quae facere, a hic placeat perferendis quo. Totam placeat at voluptatum cum, similique aut. Esse, ratione ducimus. Voluptates, quidem consectetur.</div>
+            </div>
+            <div id="footer">&copy; ArtBTechnologies | 0553159761</div>
+        </div>
     </body>
 </html>
