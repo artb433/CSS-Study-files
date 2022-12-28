@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function bodyload3 () {
+                document.getElementById("hi").src="beach.jpg";
+                document.getElementById("txtRegister").value="Register";
+            }
+        </script>
+    </head>
+    <body onload="bodyload3()">
+        <div>
+            <img id="hi" width="300" height="300" border="1">
+        </div>
+        <form>
+            Name: <input type="text" id="txtName">
+                  <input type="button" id="txtRegister">
+        </form>
+    </body>
+</html>

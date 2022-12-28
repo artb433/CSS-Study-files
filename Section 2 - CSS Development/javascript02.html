@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Refer by BOM and DOM</title>
+        <script>
+            function bodyload(){
+                window.document.images[0].src="beach.jpg";
+                window.document.forms[0].elements[1].value="Register";
+            }
+        </script>
+    </head>
+    <body onload="bodyload()">
+        <div>
+            <img width="300" height="300">
+        </div>
+        <div>
+            <form>
+                Name: <input type="text">
+                      <input type="button">
+            </form>
+        </div>
+    </body>
+</html>
