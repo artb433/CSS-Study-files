@@ -5,9 +5,10 @@
         <script>
             function bodyload(){
                 window.document.images[0].src="beach.jpg";
-                window.document.forms[0].elements[1].value="Register";
+                window.document.forms[0].elements[1].value="Delete";
             }
         </script>
+        <script src="tryjavascript5.js"></script>
     </head>
     <body onload="bodyload()">
         <div>
@@ -16,7 +17,7 @@
         <div>
             <form>
                 Name: <input type="text">
-                      <input type="button">
+                      <input type="button" onclick="DeleteClick()">
             </form>
         </div>
     </body>
