@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function bodyload7() {
+                var x=document.getElementsByName("pay");
+                alert("Total number of payment methods is: " + x.length);
+            }
+        </script>
+    </head>
+    <body onload="bodyload7()">
+        <div>
+            <fieldset>
+                <legend>Payment Methods</legend>
+                <input type="radio" name="pay">COD<br>
+                <input type="radio" name="pay">Credit Card
+            </fieldset>
+        </div>
+    </body>
+</html>
