@@ -1,4 +1,4 @@
-function Register() {
+function RegisterProduct() {
     var Id=document.getElementById("txtId").value;
     var name=document.getElementById("txtName").value;
     var price=document.getElementById("txtPrice").value;
@@ -17,4 +17,6 @@ function Register() {
     document.getElementById("lblMfd").innerText=mfd;
     document.getElementById("lblStock").innerText=stock;
     document.getElementById("lblCity").innerText=city;
+
+
 }
