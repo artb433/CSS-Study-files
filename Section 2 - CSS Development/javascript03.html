@@ -7,16 +7,14 @@
                 Home.btnRegister.value="Register";
             }
         </script>
+        <script src="javascript08.js"></script>
     </head>
-    <body onload="bodyload2()">
-        <div>
-            <img name="pic" width="300" height="300" border="1">
-        </div>
-        <div>
+    <body>
             <form name="Home">
-                Name: <input type="text">
-                      <input type="button" name="btnRegister">
+                Enter Name: <input type="text" id="txtName">
+                            <input type="button" value="Register" onclick="RegisterClick()">
+                            <br/>
+                            <div align="center" id="msg"></div>
             </form>
-        </div>
     </body>
 </html>

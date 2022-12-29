@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            #msg {
+                color: green;
+            }
+        </style>
         <script>
             function bodyload7() {
                 var x=document.getElementsByName("pay");
                 alert("Total number of payment methods is: " + x.length);
             }
         </script>
+        <script src="javascript09.js"></script>
+        <script src="tryjavascript6.js"></script>
     </head>
-    <body onload="bodyload7()">
+    <body onload="bodyload7(), DeleteClick(), bodyload9()">
         <div>
             <fieldset>
                 <legend>Payment Methods</legend>
@@ -16,5 +23,6 @@
                 <input type="radio" name="pay">Credit Card
             </fieldset>
         </div>
+        <div id="msg" ></div>
     </body>
 </html>
