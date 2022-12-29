@@ -10,4 +10,11 @@ function Register() {
     if(no.checked)
     stock=no.value;
     var city=document.getElementById("lstCities").value;
+
+    document.getElementById("lblId").innerText=Id;
+    document.getElementById("lblName").innerText=name;
+    document.getElementById("lblPrice").innerText=price;
+    document.getElementById("lblMfd").innerText=mfd;
+    document.getElementById("lblStock").innerText=stock;
+    document.getElementById("lblCity").innerText=city;
 }

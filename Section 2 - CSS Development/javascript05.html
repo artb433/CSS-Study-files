@@ -28,7 +28,7 @@
                         <dd><input type="text" id="txtName"></dd>
                         <dt>Product price</dt>
                         <dd><input type="range" min="1000" max="40000" id="txtPrice"></dd>
-                        <dt>Product Manufactured</dt>
+                        <dt>Date Manufactured</dt>
                         <dd><input type="date" id="txtMfd"></dd>
                         <dt>Is in stock</dt>
                         <dd>
@@ -47,6 +47,36 @@
                     </dl>
                     <br>
                     <input type="button" value="Register" onclick="Register()">
+                </fieldset>
+                <br>
+                <fieldset id="showDetails">
+                    <legend>Product Details</legend>
+                    <table width="400" border="1">
+                        <tr>
+                            <td>Product Id</td>
+                            <td id="lblId"></td>
+                        </tr>
+                        <tr>
+                            <td>Product Name</td>
+                            <td id="lblName"></td>
+                        </tr>
+                        <tr>
+                            <td>Product Price</td>
+                            <td id="lblPrice"></td>
+                        </tr>
+                        <tr>
+                            <td>Date Manufactured</td>
+                            <td id="lblMfd"></td>
+                        </tr>
+                        <tr>
+                            <td>In Stock</td>
+                            <td id="lblStock"></td>
+                        </tr>
+                        <tr>
+                            <td>Shipped to</td>
+                            <td id="lblCity"></td>
+                        </tr>
+                    </table>
                 </fieldset>
             </form>
         </div>
