@@ -7,10 +7,48 @@
                alert("total no. of images in page: " + x.length);
             }
         </script>
+        <script src="tryjavascript7.js"></script>
+        <script src="tryjavascript10.js"></script>
     </head>
     <body onload="bodyload5()">
         <div>
             <img src="beach.jpg" alt="beach image" width="300" height="300" border="1" align="center">
+        </div>
+        <div><br></div>
+        <div>
+            <form>
+                <input type="button" value="create folder" onclick="CreateFolder()">
+                <div id="msg"></div>
+                <fieldset id="showRegister">
+                    <legend>Register product</legend>
+                    <dl>
+                        <dt>Product Id</dt>
+                        <dd><input type="number" min="1" max="10" id="txtId"></dd>
+                        <dt>Product Name</dt>
+                        <dd><input type="text" id="txtName"></dd>
+                        <dt>Product price</dt>
+                        <dd><input type="range" min="1000" max="40000" id="txtPrice"></dd>
+                        <dt>Product Manufactured</dt>
+                        <dd><input type="date" id="txtMfd"></dd>
+                        <dt>Is in stock</dt>
+                        <dd>
+                            <input type="radio" name="stock" value="Available" id="optYes">Yes
+                            <input type="radio" name="stock" value="out of stock" id="optNo">No
+                        </dd>
+                        <dt>Shipped to</dt>
+                        <dd>
+                            <select id="lstCities">
+                                <option value="Accra">Accra</option>
+                                <option value="Kumasi">Kumasi</option>
+                                <option value="Takoradi">Takoradi</option>
+                                <option value="Sunyani">Sunyani</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <br>
+                    <input type="button" value="Register" onclick="Register()">
+                </fieldset>
+            </form>
         </div>
     </body>
 </html>
