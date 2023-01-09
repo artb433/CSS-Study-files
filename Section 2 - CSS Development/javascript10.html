@@ -3,6 +3,7 @@
     <head>
         <script src="tryjavascript18.js"></script>
         <script src="tryjavascript19.js"></script>
+        <script src="regularexpression.js"></script>
     </head>
     <body>
         <div>
@@ -28,6 +29,14 @@
             <div>
                 <input type="range" id="txtRange" min="0" max="3" value="0" onchange="showProductDetails();">
             </div>
+        </div>
+        <div>
+            <fieldset>
+                <legend>password</legend>
+                <input type="password" id="txtpwd" onkeyup="verifyPassword();">
+                <meter min="1" max="100" value="0" low="0" high="0" id="grade"></meter>
+                <span id="msg"></span>
+            </fieldset>
         </div>
     </body>
 </html>
