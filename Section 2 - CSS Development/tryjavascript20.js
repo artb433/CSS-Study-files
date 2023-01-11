@@ -11,3 +11,4 @@ function f8(){
     
     document.write("Datatype of NAME: "+(typeof name)+"<br/>" + "Datatype of Age : "+(typeof age)+ "<br/>"+"Datatype of role: "+(typeof isPermanentRole)+"<br/>"+"Datatype of cities : "+(typeof cities));
 }
+f8();

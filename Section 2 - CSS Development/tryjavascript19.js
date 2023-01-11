@@ -16,4 +16,4 @@ function showProductDetails(){
     prodName.innerHTML=myProducts[txtRange.value].Name;
     prodPrice.innerHTML=myProducts[txtRange.value].price;
 }
-showProductDetails
+showProductDetails();
