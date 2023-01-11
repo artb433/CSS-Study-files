@@ -3,12 +3,12 @@ function switchCase(){
     switch(x)
     {
         case 0:
-            document.write("zero");
+            document.write(" zero");
         case 1:
-            document.write("one");
+            document.write(" one");
         break;
         case 2:
-            document.write("two");
+            document.write(" two");
         break;
         default:
             document.write("Enter numbers 0 to 2");
@@ -18,7 +18,7 @@ function switchCase(){
 switchCase();
 
 function checkUser(){
-    var users=[
+    var Users=[
         {Name:"Tahiru"},
         {Name:"John"},
         {Name:"David"},
@@ -27,14 +27,16 @@ function checkUser(){
     var userName=document.getElementById("txtName").value;
     var msg=document.getElementById("msg");
 
-    for(var i=0;i<users.length;i++){
-        if(userName==users[i].Name)
+    for(var i=0;i<Users.length;i++){
+        if(userName==Users[i].Name)
         {
             msg.innerHTML="username taken by another";
+            return;
         }
         else{
-            msg.innHTML="username available";
-        
+            msg.innerHTML="Available";
+
         }
     }
 }
+checkUser();
