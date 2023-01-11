@@ -5,7 +5,59 @@
     </head>
     <body>
         <div>
-            
+            <fieldset>
+                <legend>Install Game</legend>
+                <dl>
+                    <dt>Select available harddisk space</dt>
+                    <dd>
+                        <select id="lstHdd" onchange="selectHarddisk()">
+                            <option value="2">2GB</option>
+                            <option value="5">5GB</option>
+                            <option value="10">10GB</option>
+                        </select>
+                    </dd>
+                    <dt>Select available RAM</dt>
+                    <dd>
+                        <input type="number" min="1" max="8" value="1" id="txtRam" disabled onchange="selectRam()">
+                    </dd>
+                    <dt>Is Graphic card Available</dt>
+                    <dd>
+                        <select id="lstGraphic" disabled onchange="selectGraphic()">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </dd>
+                    <br/>
+                    <input type="button" id="btnInstall" value="install" disabled onclick="install()">
+                </dl>
+            </fieldset>
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
