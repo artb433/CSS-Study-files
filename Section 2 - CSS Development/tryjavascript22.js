@@ -18,3 +18,13 @@ function getDetails(){
     
 }
 getDetails();
+
+function historyTry(){
+    if(history.length>3){
+        alert("Register for more");
+        location.href="javascript05.html";
+    }else{
+        document.write("You can view max 3 pages for free");
+    }
+}
+historyTry();
