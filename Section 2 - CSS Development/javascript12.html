@@ -3,7 +3,7 @@
     <head>
         <script src="tryjavascript21.js"></script>
     </head>
-    <body>
+    <body onload="greetUser()">
         <div>
             <fieldset>
                 <legend>Names</legend>
@@ -18,9 +18,17 @@
             <div align="center">
                 <input type="button" value="Refresh" onclick="changeCode()">
             </div>   
-        <div id="msg" align="center"></div>
+        <div id="msg3" align="center"></div>
         <div align="center">
-            <h2 align="center" id="pic" width="100" height="100"></h2>
-        </div>  
+            <h2 align="center" id="uname"></h2>
+            <br><br>
+            <img src="boss.png" id="pic" width="100" height="100">
+        </div> 
+        <div>
+            <img src="boss.png" width="100" height="100" onclick="viewLarge()">
+            <p>Double click on image to view large</p>
+            <input type="button" value="close" onclick="newWindow.close()">
+            <input type="button" value="print" onclick="window.print()">
+        </div> 
     </body>
 </html>
