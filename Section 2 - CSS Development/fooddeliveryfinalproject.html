@@ -1,9 +1,101 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            function placeOrder(){
+                Uname=document.getElementById("txtName");
+                mobile=document.getElementById("txtMobile");
+                burger=document.getElementById("optBurger");
+                roller=document.getElementById("optRoller");
+                fries=document.getElementById("optFries");
 
+                var mcost=0;
+                var acost=0;
+                var mname=" ";
+                var aname=" ";
+                if(burger.checked){
+                    mcost=120;
+                    mname=burger.value;
+                }
+                if(roller.checked){
+                    mcost=100;
+                    mname=roller.value;
+                }
+                if(fries.checked){
+                    acost=60;
+                    mcost+=acost;
+                    aname+=fries.value+ "<br>";
+                }
+            }
+        </script>
     </head>
     <body>
-         
+        <div>
+            <font size="0">
+                <table width="800" border="2" cellspacing="4" cellpadding="4" align="center" id="orderform">
+                    <tr>
+                        <td>
+                            <img src="food.jpeg" alt="food image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Customer Details</td>
+                    </tr>
+                    <tr>
+                        <td>Customer name</td>
+                        <td><input type="text" id="txtName"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td><input type="text" id="txtMobile"></td>
+                    </tr>
+                    <tr>
+                        <td>Select a meal</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="burger.jpg" alt="burger image">
+                            <br>
+                            <input type="radio" name="meal" id="optBurger" value="omgBurger">Burger(&#8377;120/-)
+                        </td>
+                        <td>
+                            <img src="roller.jpeg" alt="roller image">
+                            <br>
+                            <input type="radio" name="meal" id="optRoller" value="omgRoller">omgRoller(&#8377;100/-)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Select Ad-On's</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="fries.jpeg" alt="fries image">
+                            <br>
+                            <input type="checkbox" id="optfries" value="largefries">largefries(&#8377;60/-)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="place order" onclick="">
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <dl id="order summary" style="display: none;">
+                    <h2>Order Summary</h2>
+                    <dt>Customer name</dt>
+                    <dd id="lblName"></dd>
+                    <dt>Mobile</dt>
+                    <dd id="lblMobile"></dd>
+                    <dt>Meal</dt>
+                    <dd id="lblMeal"></dd>
+                    <dt>AD-on's</dt>
+                    <dd id="lbladd"></dd>
+                    <dt>Total bill Amount</dt>
+                    <dd id="lblAmount"></dd>
+                    <br>
+                    <input type="button" value="print Bill" onclick="window.print()">
+                </dl>
+        </div>
     </body>
 </html>
